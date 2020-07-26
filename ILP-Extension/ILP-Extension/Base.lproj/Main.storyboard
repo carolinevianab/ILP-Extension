@@ -18,6 +18,20 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-AZ-0wz" customClass="SKView">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Glixino" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG5-gM-rCg">
+                                        <rect key="frame" x="20" y="374" width="374" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Glixino"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="iEye" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-0k-s25">
+                                        <rect key="frame" x="20" y="458" width="374" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="iEye"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click an entity to see more about it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idt-bK-2hu">
@@ -33,11 +47,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Piclet"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Havyon" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-pd-kY6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Havyion" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-pd-kY6">
                                 <rect key="frame" x="20" y="366" width="374" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Havyon"/>
+                                <state key="normal" title="Havyion"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -45,7 +59,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="tWs-oF-vqj"/>
                     <connections>
+                        <outlet property="bntGlixino" destination="lG5-gM-rCg" id="KOb-Jw-kv2"/>
+                        <outlet property="bntHavyion" destination="Lix-pd-kY6" id="cA7-aW-c1P"/>
                         <outlet property="bntPinclet" destination="jgt-Hs-vdT" id="kgE-Zf-wAa"/>
+                        <outlet property="bntiEye" destination="cn5-0k-s25" id="xx0-T9-Dqt"/>
                         <outlet property="sceneView" destination="KJm-AZ-0wz" id="zpo-UP-kYx"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToDetails" id="hrF-8n-jKH"/>
                     </connections>

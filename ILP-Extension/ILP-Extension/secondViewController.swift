@@ -13,12 +13,13 @@ class secondViewController: UIViewController {
 
     @IBOutlet weak var sceneView: SKView!
     var scene: creaturesScene?
+    var choice = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let scene = self.scene{
-            scene.clickAndFollow()
+            scene.clickAndFollow(choice)
         }
     }
     
@@ -30,32 +31,15 @@ class secondViewController: UIViewController {
         self.sceneView.presentScene(scene)
         
         if let scene = self.scene{
-            scene.clickAndFollow()
+            scene.clickAndFollow(choice)
         }
     }
     
     override func willMove(toParent parent: UIViewController?) {
         super.willMove(toParent: parent)
         if parent == nil {
-            // The back button was pressed or interactive gesture used
             scene?.removeAllChildren()
         }
     }
-
-   // override var isMovingFromParent: Bool
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
