@@ -30,7 +30,7 @@ class creaturesScene: SKScene {
         super.init(size: size)
         self.backgroundColor = .white
         framesUsed = [SKTexture(imageNamed: "havyion"), SKTexture(imageNamed: "HavFrame")]
-        touchLocal = CGPoint(x: frame.midX, y: frame.midY)
+        touchLocal = CGPoint(x: 270, y: 140)
     }
     
     func animateCreature(_ creature: String){
@@ -91,7 +91,7 @@ class creaturesScene: SKScene {
         aux = creatureNow
         let firstTex = self.framesUsed![0]
         let creature = SKSpriteNode(texture: firstTex)
-        creature.position = CGPoint(x: frame.midX, y: frame.midY)
+        creature.position = CGPoint(x: 270, y: 140)
         creature.name = "creature"
         self.addChild(creature)
         
